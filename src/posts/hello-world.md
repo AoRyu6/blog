@@ -1,6 +1,6 @@
 ---
-title: 'Hello world'
-summary: 'This is my first post!'
+title: "Hello world"
+summary: "This is my first post!"
 ---
 
 # Heading1
@@ -58,7 +58,7 @@ summary: 'This is my first post!'
 
 ```js title="example.js"
 function helloWorld() {
-	console.log('Hello, World!');
+  console.log("Hello, World!");
 }
 ```
 
@@ -97,25 +97,27 @@ Markdownを使ってテキストを装飾する方法を以下に示します。
 
 ```js title="line-markers.js" del={2} ins={3-4} {6}
 function demo() {
-	console.log('this line is marked as deleted');
-	// This line and the next one are marked as inserted
-	console.log('this is the second inserted line');
+  console.log('this line is marked as deleted')
+  // This line and the next one are marked as inserted
+  console.log('this is the second inserted line')
 
-	return 'this line uses the neutral default marker type';
+  return 'this line uses the neutral default marker type'
 }
 ```
 
 ```jsx {"1":5} del={"2":7-8} ins={"3":10-12}
 // labeled-line-markers.jsx
 <button
-	role="button"
-	{...props}
-	value={value}
-	className={buttonClassName}
-	disabled={disabled}
-	active={active}
+  role="button"
+  {...props}
+  value={value}
+  className={buttonClassName}
+  disabled={disabled}
+  active={active}
 >
-	{children && !active && (typeof children === 'string' ? <span>{children}</span> : children)}
+  {children &&
+    !active &&
+    (typeof children === 'string' ? <span>{children}</span> : children)}
 </button>
 ```
 
@@ -127,7 +129,7 @@ this is a regular line
 
 ```js "given text"
 function demo() {
-	// Mark any given text inside lines
-	return 'Multiple matches of the given text are supported';
+  // Mark any given text inside lines
+  return 'Multiple matches of the given text are supported';
 }
 ```
