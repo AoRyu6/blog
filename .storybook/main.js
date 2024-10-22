@@ -1,6 +1,5 @@
 /** @type { import('@storybook/sveltekit').StorybookConfig } */
 const config = {
-	stories: ['../src/**/*.mdx', '../src/**/*.stories.@(js|ts|svelte)'],
 	addons: [
 		'@storybook/addon-svelte-csf',
 		'@storybook/addon-links',
@@ -11,6 +10,7 @@ const config = {
 	framework: {
 		name: '@storybook/sveltekit',
 		options: {}
-	}
+	},
+	stories: ['../src/**/*.mdx', '../src/**/*.stories.@(js|ts|svelte)']
 };
 export default config;
