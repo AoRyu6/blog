@@ -5,8 +5,8 @@
 </script>
 
 <svelte:head>
-	<title>Blog</title>
-	<meta name="description" content="blog" />
+	<title>{data.post.title}</title>
+	<meta name="description" content={data.post.summary} />
 </svelte:head>
 
 <article class="markdown-body">
