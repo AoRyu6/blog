@@ -2,7 +2,6 @@ import js from '@eslint/js';
 import prettier from 'eslint-config-prettier';
 import perfectionist from 'eslint-plugin-perfectionist';
 import svelte from 'eslint-plugin-svelte';
-import tailwind from 'eslint-plugin-tailwindcss';
 import unusedImports from 'eslint-plugin-unused-imports';
 import globals from 'globals';
 import ts from 'typescript-eslint';
@@ -11,7 +10,6 @@ export default ts.config(
 	js.configs.recommended,
 	...ts.configs.recommended,
 	...svelte.configs['flat/recommended'],
-	...tailwind.configs['flat/recommended'],
 	perfectionist.configs['recommended-natural'],
 	prettier,
 	...svelte.configs['flat/prettier'],
