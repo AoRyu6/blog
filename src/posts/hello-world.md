@@ -56,7 +56,7 @@ summary: "This is my first post!"
 
 ### コードブロック
 
-```js
+```js title="example.js"
 function helloWorld() {
   console.log("Hello, World!");
 }
@@ -84,21 +84,52 @@ Markdownを使ってテキストを装飾する方法を以下に示します。
 - *斜体*はテキストの両端に`*`を使用します。
 - ~~取り消し線~~はテキストの両端に`~~`を使用します。
 
-:::note info
-インフォメーション
-infoは省略可能です。
-:::
+```js {1, 4, 7-8}
+// Line 1 - targeted by line number
+// Line 2
+// Line 3
+// Line 4 - targeted by line number
+// Line 5
+// Line 6
+// Line 7 - targeted by range "7-8"
+// Line 8 - targeted by range "7-8"
+```
 
-:::note warn
-警告
-○○に注意してください。
-:::
+```js title="line-markers.js" del={2} ins={3-4} {6}
+function demo() {
+  console.log('this line is marked as deleted')
+  // This line and the next one are marked as inserted
+  console.log('this is the second inserted line')
 
-:::note alert
-より強い警告
-○○しないでください。
-:::
+  return 'this line uses the neutral default marker type'
+}
+```
 
-A note[^1]
+```jsx {"1":5} del={"2":7-8} ins={"3":10-12}
+// labeled-line-markers.jsx
+<button
+  role="button"
+  {...props}
+  value={value}
+  className={buttonClassName}
+  disabled={disabled}
+  active={active}
+>
+  {children &&
+    !active &&
+    (typeof children === 'string' ? <span>{children}</span> : children)}
+</button>
+```
 
-[^1]: Big note.
+```diff
++this line will be marked as inserted
+-this line will be marked as deleted
+this is a regular line
+```
+
+```js "given text"
+function demo() {
+  // Mark any given text inside lines
+  return 'Multiple matches of the given text are supported';
+}
+```
