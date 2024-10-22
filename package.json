@@ -28,6 +28,7 @@
 		"@storybook/sveltekit": "^8.3.6",
 		"@storybook/test": "^8.3.6",
 		"@sveltejs/adapter-auto": "^3.2.5",
+		"@sveltejs/adapter-static": "^3.0.5",
 		"@sveltejs/kit": "^2.7.2",
 		"@sveltejs/vite-plugin-svelte": "^4.0.0",
 		"@types/eslint": "^9.6.1",
