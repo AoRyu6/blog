@@ -18,6 +18,9 @@
 	},
 	"devDependencies": {
 		"@chromatic-com/storybook": "^2.0.2",
+		"@content-collections/core": "^0.7.2",
+		"@content-collections/markdown": "^0.1.2",
+		"@content-collections/vite": "^0.2.3",
 		"@markuplint/svelte-parser": "4.7.0-alpha.1",
 		"@markuplint/svelte-spec": "^4.5.9",
 		"@playwright/test": "^1.48.1",
