@@ -18,7 +18,7 @@
 	},
 	"devDependencies": {
 		"@chromatic-com/storybook": "^2.0.2",
-		"@markuplint/svelte-parser": "^4.6.9",
+		"@markuplint/svelte-parser": "4.7.0-alpha.1",
 		"@markuplint/svelte-spec": "^4.5.9",
 		"@playwright/test": "^1.48.1",
 		"@storybook/addon-essentials": "^8.3.6",
