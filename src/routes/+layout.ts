@@ -1,2 +1,4 @@
+import { dev } from '$app/environment';
+
 export const prerender = true;
-export const csr = process.env.NODE_ENV !== 'production';
+export const csr = dev;
